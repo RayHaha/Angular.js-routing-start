@@ -7,6 +7,13 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
+    <!-- absolute path -> add the path to root domain
+    <a routerLink="/servers">Reload Page</a>
+    relative path -> add the path to currently loaded path
+    <a routerLink="servers">Reload Page</a>
+    <a routerLink="./servers">Reload Page</a>
+    ../ means go back one path can use more like ../../
+    <a routerLink="../servers">Reload Page</a> -->
     <app-edit-server></app-edit-server>
     <hr>
     <app-server></app-server>
