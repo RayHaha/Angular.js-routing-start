@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServersService } from './servers.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-servers',
@@ -9,10 +10,17 @@ import { ServersService } from './servers.service';
 export class ServersComponent implements OnInit {
   private servers: { id: number, name: string, status: string }[] = [];
 
-  constructor(private serversService: ServersService) { }
+  // use ActivatedRoute to get the current route
+  constructor(private serversService: ServersService,
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.servers = this.serversService.getServers();
   }
 
+  onReload(){
+    // thie may let the link go to localhost/servers/servers
+    //this.router.navigate(['/servers'], { relativeTo: this.route});
+  }
 }
