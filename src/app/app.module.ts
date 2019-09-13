@@ -16,8 +16,8 @@ import { ServersService } from './servers/servers.service';
 // ":" tell angular that this is the dynamic part of the path
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'users', component: UserComponent },
-  { path: 'users/:id', component: UserComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'users/:id/:name', component: UserComponent },
   { path: 'servers', component: ServersComponent }
 ];
 
