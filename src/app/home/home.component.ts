@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLoadServers(){
+  onLoadServers() {
     // some other operations
     // navigate in function programmatically
     this.router.navigate(['/servers']);
