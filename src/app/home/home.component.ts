@@ -18,4 +18,8 @@ export class HomeComponent implements OnInit {
     // navigate in function programmatically
     this.router.navigate(['/servers']);
   }
+
+  onLoadServer(id: number){
+    this.router.navigate(['/server', id, 'edit', { queryParams: { allowEdit: '1' }, fragment: 'loading' }]);
+  }
 }
