@@ -12,14 +12,14 @@ export class ServersComponent implements OnInit {
 
   // use ActivatedRoute to get the current route
   constructor(private serversService: ServersService,
-              private router: Router,
-              private route: ActivatedRoute) { }
+    private router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.servers = this.serversService.getServers();
   }
 
-  onReload(){
+  onReload() {
     // thie may let the link go to localhost/servers/servers
     //this.router.navigate(['/servers'], { relativeTo: this.route});
   }
