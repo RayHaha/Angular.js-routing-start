@@ -20,7 +20,9 @@ export class ServersComponent implements OnInit {
   }
 
   onReload() {
+
     // thie may let the link go to localhost/servers/servers
     //this.router.navigate(['/servers'], { relativeTo: this.route});
+    
   }
 }
