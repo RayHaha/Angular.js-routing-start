@@ -37,6 +37,7 @@ export class ServersService {
         return s.id === id;
       }
     );
+    
     if (server) {
       server.name = serverInfo.name;
       server.status = serverInfo.status;
