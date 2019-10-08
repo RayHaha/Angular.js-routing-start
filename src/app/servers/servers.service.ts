@@ -1,4 +1,5 @@
 export class ServersService {
+  
   private servers = [
     {
       id: 1,
@@ -20,7 +21,7 @@ export class ServersService {
   getServers() {
 
     return this.servers;
-    
+
   }
 
   getServer(id: number) {
