@@ -20,6 +20,7 @@ export class ServersService {
   getServers() {
 
     return this.servers;
+    
   }
 
   getServer(id: number) {
