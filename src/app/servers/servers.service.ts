@@ -49,6 +49,7 @@ export class ServersService {
       
       server.name = serverInfo.name;
       server.status = serverInfo.status;
+      
     }
   }
 }
