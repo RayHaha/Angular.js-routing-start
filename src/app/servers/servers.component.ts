@@ -16,6 +16,7 @@ export class ServersComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
+    
     this.servers = this.serversService.getServers();
   }
 
