@@ -26,6 +26,7 @@ export class ServerComponent implements OnInit {
       (params: Params) => {
         
         this.server = this.serversService.getServer(+params['id']);
+        
       }
     );
     
