@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
@@ -29,7 +30,7 @@ export class ServerComponent implements OnInit {
         this.server = this.serversService.getServer(+params['id']);
         
       }
-      
+
     );
     
   }
