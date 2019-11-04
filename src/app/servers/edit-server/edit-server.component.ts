@@ -9,6 +9,7 @@ import { ServersService } from '../servers.service';
   styleUrls: ['./edit-server.component.css']
 })
 export class EditServerComponent implements OnInit {
+  
   server: { id: number, name: string, status: string };
   serverName = '';
   serverStatus = '';
