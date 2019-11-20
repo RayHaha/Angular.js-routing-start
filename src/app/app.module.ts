@@ -14,6 +14,8 @@ import { ServerComponent } from './servers/server/server.component';
 import { ServersService } from './servers/servers.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.modules';
+import { AuthService } from './auth.service';
+import { AuthGuard } from './auth-guard.service';
 
 // ":" tell angular that this is the dynamic part of the path
 // const appRoutes: Routes = [
@@ -46,7 +48,7 @@ import { AppRoutingModule } from './app-routing.modules';
     //,RouterModule.forRoot(appRoutes)
     ,AppRoutingModule
   ],
-  providers: [ServersService],
+  providers: [ServersService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
