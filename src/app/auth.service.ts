@@ -14,6 +14,7 @@ export class AuthService{
             }
         );
         return promise;
+        
     }
 
     logIn(){
