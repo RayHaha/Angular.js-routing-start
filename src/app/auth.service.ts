@@ -18,6 +18,7 @@ export class AuthService{
     }
 
     logIn(){
+        
         this.loggedIn = true;
     }
 
