@@ -13,6 +13,7 @@ import { ActivatedRoute, Data } from '@angular/router';
     }
     
     ngOnInit(){
+        
         this.errorMessage = this.route.snapshot.data['message'];
         this.route.data.subscribe(
             (data: Data) => {
